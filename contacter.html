@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>OSAP website Design -Easy Way</title>
-        <link rel="stylesheet" href="index.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    </head>
-    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSAP website Design -Easy Way</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/bd65254806.js" crossorigin="anonymous"></script>
+
+</head>
+
 <body>
     <section class="header">
         <nav>
-            <a href="index.html"><img src="pics/logoo.png"></a>
+            <a href="index.html"><img src="pics/logo.jpeg"></a>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
-                        <li><a href="blog.html"></a></li>
-                        <li><a href="contacter.html">CONTACT US</a></li>
-                        <li><a href="blog.html">SIGN UP </a></li>
-                        <li><a href="about.html">SIGN IN </a></li>
+                    <li><a href="blog.html"></a></li>
+                    <li><a href="contacter.html">CONTACT US</a></li>
+                    <li><a href="blog.html">SIGN UP </a></li>
+                    <li><a href="about.html">ABOUT</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -52,59 +54,64 @@
     </section>
     <!-- Contact us content -->
     <section class="contact-us">
-        <div class="row">
-            <div class="contact-col">
-                <div>
 
-                    <i class="fa fa-home"></i>
-                    <span>
-                        <h5>Tétouan 93000</h5>
-                        <p>Morocco,Tetouan,IN</p>
-                    </span>
-                </div>
-                <div>
-                    <i class="fa fa-phone"></i>
-                    <span>
-                        <h5>0652969316</h5>
-                        <p>Monday to Saturday</p>
-                    </span>
-                </div>
-                <div>
-                    <i class="fa fa-envelope-o"></i>
-                    <span>
-                        <h5>assalharras@gmail.com</h5>
-                        <p>Email us here</p>
-                    </span>
-                </div>
-            </div>
-            <div class="contact-col">
-                <form action="form-handler.php" method="post">
-                    <input type="text" name="name" placeholder="Enter your name" required>
-                    <input type="email"name="email"  placeholder="Enter your email" required>
-                    <input type="text"name="subject"  placeholder="Enter your subject" required>
-                    <textarea rows="8" name="message"  placeholder="Message" required></textarea>
+        <div class="contact-col">
+        </div>
+
+
+
+
+        <form  action="form-handler.php" method="post">
+            
+                <div class="blog" style="margin-top: 20%;">
+                    <h3>Contact Us</h3>
+                    <div class="input">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" name="email" placeholder="Enter your email" required>
+
+                    </div>
+                    <div class="input">
+                        <i class="fa-solid fa-prescription"></i>
+                        <input type="text" name="subject" placeholder="Enter your subject" required>
+                    </div>
+                    <div class="input">
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+</div>
                     <button type="submit" class="hero-btn red-btn">Send Message</button>
-
-
-                </form>
-
-
+                </div>
 
             </div>
+        </form>
+
+        <div class="contact-col">
+
+
+
+
+
+
+
+
+        </div>
         </div>
     </section>
-  <!-- footer -->
-  <section class="footer">
-   <div class="icons">
-        <i class="fa fa-facebook"></i>
-        <i class="fa fa-twitter"></i>
-        <i class="fa fa-instagram"></i>
-        <i class="fa fa-linkedin"></i>
-    </div>
-    <p>Made with <i class="fa fa-facebook">love</i>
-    </p>
-</section>
+    <!-- footer -->
+    <section class="footer">
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-facebook">love</i>
+        </p>
+    </section>
 
 
 </body>
+
 </html>

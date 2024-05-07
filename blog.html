@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/bd65254806.js" crossorigin="anonymous"></script>
 </head>
 
 </head>
@@ -29,7 +30,7 @@
                         <li><a href="blog.html"></a></li>
                         <li><a href="contacter.html">CONTACT US</a></li>
                         <li><a href="blog.html">SIGN UP </a></li>
-                        <li><a href="about.html">SIGN IN </a></li>
+                        <li><a href="about.html">ABOUT </a></li>
                     </ul>
                 </div>
                 <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -52,24 +53,12 @@
 
         <!--     Activities-->
         <section class="activities">
-            <h1 style="margin-left: 5%; color: chocolate;">Welcome Here:</h1>
-           
+            <h1 style="margin-left: 5%; color: AFD0E3;">Welcome Here !</h1>
+
             <div class="row">
                 <div class="activities-col">
                     <img src="">
                     <!-- <p></p> <a href="" class="hero-btn2">en savoir plus</a> -->
-
-                </div>
-
-                <div class="activities-col">
-                    <img src="pics/2024-05-01 (5)(1).png">
-                     
-                </div>
-
-
-                <div class="activities-col">
-                    <img src="pics/cafeteria.png">
-                   
 
                 </div>
             </div>
@@ -79,81 +68,84 @@
         <!-- blog page content -->
 
         <section class="blog-content">
-            <div class="row">
+
+
+
+
+
+            <form class=".container">
                 <div class="blog-left">
-                    <img src="pics/logo.jpeg">
-                   
-                         <br>
-                        
-                        <h4>ES-TU PRÊT.E ?</h4>
-                    <div class="comment-box">
-                        <h3 style="color: aliceblue;">Sign up</h3>
-                        <form class="comment-form" >
-                            <label for="">Enter Pet name</label>
-                            <input type="text">
-                            <label for="">Enter Pet age</label>
-                            <input type="number" >
-                            <label for="">Description</label>
-                            
-                            <textarea rows="5" placeholder="Description 'Pet'"></textarea>
-                            <button type="submit" class="hero-btn red-btn" style="color: bisque;">Add new pet to the Family</button>
+                    <div class="blog">
+                        <h3 id="title">Sign Up</h3>
+                        <div class="input" id="names">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" placeholder="Pet name">
+                        </div>
+                        <div class="input">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <div class="input">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" placeholder="Password">
+                        </div>
 
-                        </form>
+                        <button type="submit" class="hero-btn red-btn">Add new pet to the Family</button>
+                        <p>Lost password? <a href="#">Click Here!</a></p>
+                        <div class="btn-field">
+                            <button id="up">Sign up</button>
+                            <button id="icn" class="disable">Sign in</button>
+                        </div>
                     </div>
                 </div>
-                <div class="blog-right">
-                    <h3>Post Categories</h3>
-                    <div>
-                        <span>Age</span>
-                        <span>21</span>
-                    </div>
-                    <div>
-                        <span>Health Issues</span>
-                        <span>21</span>
-                    </div>
-                    <div>
-                        <span>Color</span>
-                        <span>21</span>
-                    </div>
-                    <div>
-                        <span>Size</span>
-                        <span>21</span>
-                    </div>
-                </div>
-        </section>
+
+            </form>
+
+    </div>
+    </section>
 
 
 
 
 
-        <!-- footer -->
-        <section class="footer">
-            <
-            <div class="icons">
-                <i class="fa fa-facebook"></i>
-                <i class="fa fa-twitter"></i>
-                <i class="fa fa-instagram"></i>
-                <i class="fa fa-linkedin"></i>
-            </div>
-            <p>Made with <i class="fa fa-heart-o"> Love</i>
-            </p>
-        </section>
+    <!-- footer -->
+    <section class="footer">
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"> Love</i>
+        </p>
+    </section>
 
+    <script>
+        let up = document.getElementById("up");
+        let icn = document.getElementById("in");
+        let name = document.getElementById("names");
+        let title = document.getElementById("title");
 
+        icn.onclick = function(){
+            name.style.maxHeight = "0";
+            title.innerHTML = "Sign In";
+            up.classList.Add("disable");
+            icn.classList.remove("disable");
+        }
 
-        <!-- JAvascript for Toggle Menu  -->
-        <script>
-            var navLinks = document.getElementById("navLinks");
-            function showMenu() {
-                navLinks.style.right = "0";
+    </script>
 
-            }
-            function hideMenu() {
+    <!-- JAvascript for Toggle Menu  -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0"; function hideMenu() {
                 navLinks.style.right = "-200px";
 
             }
-        </script>
-    </div>
+        }
+    </script>
+
 </body>
 
-</html>²
+</html>
