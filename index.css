@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Concert+One&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -36,6 +38,7 @@
 
 .body {
     background-color: #0E3142;
+    
 }
 
 nav {
@@ -44,6 +47,93 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+.form-and-donate {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.form-flex-row-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.form-flex-column {
+    display: flex;
+    flex-direction: column;
+    background-color: #F1CEBD;
+    border-radius: 5px;
+    padding: 35px 40px;
+}
+.form-submit-button .btn-primary,
+a.btn.donate-button.btn-primary,
+.btn.btn-primary {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    background-color: #0E3142;
+    border: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 8px 13px;
+    margin-left: 40%;
+    margin-top: 0;
+    border-radius: 10%;
+    letter-spacing: 2px;
+}
+.cat-item {
+    display: none; /* Hidden by default */
+    background-color: #6E736A;
+}
+.show {
+    background-color: #6E736A;
+    display: block; /* Shown when filtered */
+}
+.form-submit-button .btn-primary:hover,
+.btn.btn-primary:hover {
+    background: #6E736A;
+    color: #000;
+}
+.mb-3 h2 {
+    font-size: 2.5em;
+    margin-top: 5%;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 2%;
+    color: #fff;
+    letter-spacing: 2px;
+} 
+
+.card-img-top {
+    margin-left: 22%;
+}
+.filter-btn {
+    padding: 20px 10px;
+    background-color: #000;
+    color: #fff;
+}
+.form-button-row {
+    display: flex;
+    flex-direction: row;
+}
+
+input.form-control,
+select.form-control {
+    font-size: 1em;
+}
+
+.form-group label {
+    color: black;
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+
+}
+
+.card.mb-3,
+div.card {
+    
+    font-family: 'Heebo', sans-serif;
+    color: #585757;
+} 
 
 nav img {
     width: 150px;
@@ -103,9 +193,6 @@ nav img {
 
 }
 
-
-button {}
-
 h6 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #AFD0E3;
@@ -132,7 +219,7 @@ h1 {
     margin-top: 20px;
 }
 
-.hero-btn1 {
+.hero-bn1 {
     margin-top: 37px;
     margin-left: 60px;
     display: inline-block;
@@ -200,6 +287,9 @@ h1 {
     background: #3f659b;
     transition: 1s;
 }
+div.form-group {
+    padding: 15px 30px;
+}
 
 h5 {
 
@@ -216,10 +306,41 @@ h5 {
     display: flex;
 }
 
-
+.card-body a h5::before {
+    content: "Dog tips";
+    display: block;
+    position: relative;
+    top: 0px;
+    left: 0;
+    margin-right: 20%;
+    font-size: 20px;
+    padding: 30px 48px;
+    background-image: linear-gradient(to top, #AFD0E3 0, #AFD0E3 100%);
+    color: #000000;
+    float: left;
+    line-height: 0;
+    font-weight: 600;
+    clip-path: polygon(0 -1%, 100% -1%, calc(100% - 35px) 100%, 0 100%);
+}
+.card-bod a h5::before {
+    content: "What you should know about Cats ?";
+    display: block;
+    position: relative;
+    top: 0px;
+    left: 0;
+    margin-right: 20%;
+    font-size: 20px;
+    padding: 30px 48px;
+    background-image: linear-gradient(to top, #AFD0E3 0, #AFD0E3 100%);
+    color: #000000;
+    float: left;
+    line-height: 0;
+    font-weight: 600;
+    clip-path: polygon(0 -1%, 100% -1%, calc(100% - 35px) 100%, 0 100%);
+}
 
 h5::before {
-    content: "Cherish and protect the lives of all creatures, for they too feel and dream.";
+    content: "Cherish and protect the lives of all creatures.";
     display: block;
     position: relative;
     top: 0px;
@@ -238,7 +359,7 @@ h5::before {
 @media(max-width:700px) {
     .h5 h5::before {
         font-family: '#f44336', sans-serif;
-        content: "Cherish and protect the lives of all creatures, for they too feel and dream.";
+        content: "Cherish and protect the lives of all creatures";
         font-size: 15px;
         font-weight: 100;
         padding-left: 20px;
@@ -319,8 +440,6 @@ span {
     font-weight: bold;
     font-family: 'Lato', sans-serif;
 }
-
-
 p {
     font-size: 16px;
     margin-top: 20px;
@@ -330,14 +449,11 @@ p {
     line-height: 22px;
     padding: 10px;
 }
-
 .row {
     margin-top: 2%;
     display: flex;
     justify-content: space-between;
 }
-
-
 .title h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #ebeeeb;
@@ -346,7 +462,6 @@ p {
     font-weight: bold;
     text-align: center;
 }
-
 .course-col {
     flex-basis: 31%;
     background: hsl(132, 59%, 84%);
@@ -356,12 +471,10 @@ p {
     box-sizing: border-box;
     transition: 0.5s;
 }
-
 p {
     font-size: 20px;
     margin-left: 100px;
 }
-
 h3 {
 
     font-weight: 20px;
@@ -492,16 +605,13 @@ h3 {
     cursor: pointer;
     display: flex;
 }
-
 .test-col img {
     height: 40px;
     margin-left: 5px;
     margin-right: 30px;
     height: 400px;
     width: 800px;
-
 }
-
 .test-col p {
     padding: 0;
 
@@ -580,14 +690,14 @@ h3 {
 }
 
 .icons .fa {
-    color: #CB651D;
+    color: #F1CEBD;
     image-resolution: 0 13px;
     cursor: pointer;
-    padding: 18px 0;
+    padding: 20px 15px;
 }
 
 .fa-heart-o {
-    color: #CB651D;
+    color: #F1CEBD;
 }
 
 /* about us page */
@@ -669,7 +779,8 @@ h3 {
 }
 
 .blog-left p {
-    columns: #d8d8d8 padding: 0;
+    columns: #d8d8d8;
+    padding: 0;
 
 }
 
